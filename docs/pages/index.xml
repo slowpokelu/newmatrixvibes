@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on NewMatrixVibes</title>
+    <link>https://slowpokelu.github.io/newmatrixvibes/pages/</link>
+    <description>Recent content in Pages on NewMatrixVibes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://slowpokelu.github.io/newmatrixvibes/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>newmatrixvibes&#39; Newtab</title>
+      <link>https://slowpokelu.github.io/newmatrixvibes/pages/newtab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://slowpokelu.github.io/newmatrixvibes/pages/newtab/</guid>
+      <description>is a curated list of links, inspired by sindresorhus/awesome.Having knowledge of technology is a great power.
+Use it to fight for free speech, for justice, for freedom, and for equality.
+Use it to protect the right of privacy.
+Join us.--GoogleIf you value Privacy, you should use DDG instead.ContentsPrivacy |Education |InfoSec |Software |Languages |Linux |Games |Crypto Blockchain DeFi and NFT |Misc --Roadmaps--Quick Accessawesome|lofi|Discord|Spotify|PrivacyEFF|Tails|Tor|1.</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://slowpokelu.github.io/newmatrixvibes/pages/about-me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://slowpokelu.github.io/newmatrixvibes/pages/about-me/</guid>
+      <description> Jack of all Trades, Master of None. There is still so much to learn. カイゼン </description>
+    </item>
+    
+    <item>
+      <title>Project Collection</title>
+      <link>https://slowpokelu.github.io/newmatrixvibes/pages/project-collection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://slowpokelu.github.io/newmatrixvibes/pages/project-collection/</guid>
+      <description>This page will be updated with links to some of my GitHub Pages.This page will be updated with new projects over time.bg-companion-webparticlesXstars (discontinued)Cool Repos - (All Starred)
+sindresorhus/awesomejwasham/coding-interview-universityhlissner/doom-emacsgchq/CyberChefohmyzshdoublespeakgames/adarkroomrust-lang/rust</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://slowpokelu.github.io/newmatrixvibes/pages/hello-world/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://slowpokelu.github.io/newmatrixvibes/pages/hello-world/</guid>
+      <description>in a variety of programming languages. Because Pog.
+Python
+print(&amp;#34;Hello, World!&amp;#34;) C
+#include &amp;lt;stdio.h&amp;gt; int main() { printf(&amp;#34;Hello, World!\n&amp;#34;); return 0; } C++
+#include &amp;lt;iostream&amp;gt; int main() { std::cout &amp;lt;&amp;lt; &amp;#34;Hello, World!\n&amp;#34;; return 0; } Javascript
+console.log(&amp;#34;Hello, World!&amp;#34;); Common Lisp
+(format t &amp;#34;Hello, World!&amp;#34;) Rust
+fn main() { println!(&amp;#34;Hello, World!&amp;#34;); } Golang
+package main import &amp;#34;fmt&amp;#34; func main() { fmt.Println(&amp;#34;Hello, World!&amp;#34;) } NASM
+; Variables in the data section SECTION .</description>
+    </item>
+    
+  </channel>
+</rss>
