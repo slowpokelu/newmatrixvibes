@@ -32,6 +32,10 @@ menu:
         Pre: "<i class='fa fa-road'></i>"
         Weight: -100
         URL: "/pages/newtab/"
+      - Name: "projects"
+        Pre: "<i class='fa fa-road'></i>"
+        Weight: -75
+        URL: "/pages/project-collection/"
       - Name: "about"
         Pre: "<i class='fa fa-road'></i>"
         Weight: -50
