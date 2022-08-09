@@ -9,9 +9,9 @@ defaultTheme: dark;
 params:
     homeInfoParams:
         Title: Welcome To NewMatrixVibes.
-        Content: "This website is a personal side-project, a platform to put out random stuff, and digital real estate. 
+        Content: "This website is a personal side-project and platform to put out random stuff.
         \n\n
-        'newtab' in the top menu contains a curated list of useful links.
+        カイゼン x HHKB x doom emacs x lofi x colemak-dh x rust
         \n\n
         "
 
