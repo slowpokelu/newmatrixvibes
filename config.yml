@@ -40,3 +40,5 @@ menu:
 env: production
 
 ignorefiles: [ "offlineORretiredOrReworked/", "notes/"]
+
+publishDir: "docs"
