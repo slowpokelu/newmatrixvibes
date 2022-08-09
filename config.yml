@@ -1,0 +1,42 @@
+baseURL: "https://slowpokelu.github.io/newmatrixvibes/"
+languageCode: "en-us"
+title: "NewMatrixVibes"
+theme: hugo-PaperMod 
+#theme: smol-master
+# defaultTheme: auto
+defaultTheme: dark;
+
+params:
+    homeInfoParams:
+        Title: Welcome To NewMatrixVibes.
+        Content: "This website is a personal side-project, a platform to put out random stuff, and digital real estate. 
+        \n\n
+        'newtab' in the top menu contains a curated list of useful links.
+        \n\n
+        "
+
+    socialIcons:
+        - name: "github"
+          url: "https://github.com/slowpokelu/"
+        - name: "twitter"
+          url: "https://twitter.com/sl0wp0ke_LU"
+        - name: "hackthebox"
+          url: "https://www.hackthebox.eu/home/users/profile/163864"
+        #- name: "email"
+        #  url: ""
+
+
+menu:
+  main:
+      - Name: "newtab"
+        Pre: "<i class='fa fa-road'></i>"
+        Weight: -100
+        URL: "/pages/newtab/"
+      - Name: "about"
+        Pre: "<i class='fa fa-road'></i>"
+        Weight: -50
+        URL: "/pages/about-me/"
+
+env: production
+
+ignorefiles: [ "offlineORretiredOrReworked/", "notes/"]
