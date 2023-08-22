@@ -33,7 +33,7 @@ draft: false
 
 <p>is a curated list of links, inspired by <a href="https://github.com/sindresorhus/awesome#contents">sindresorhus/awesome.</a><br/>There are no affiliate links on this website.</p>
 
-<div>
+<div id="list">
 	<a href="#" id="targetToggle">New Tab?</a>
 </div>
 
@@ -643,11 +643,11 @@ draft: false
 	let openInNewTab = false;
 
 	targetToggle.addEventListener("click", (event) => {
-            event.preventDefault();
+        event.preventDefault();
 
-            openInNewTab = !openInNewTab;
-            const targetAttr = openInNewTab ? "_blank" : "_self";
-            linkElements.forEach(linkElement => linkElement.setAttribute("target", targetAttr));
+        openInNewTab = !openInNewTab;
+        const targetAttr = openInNewTab ? "_blank" : "_self";
+        linkElements.forEach(linkElement => linkElement.setAttribute("target", targetAttr));
 
 		targetToggle.classList.toggle("enabled", openInNewTab);
 	});
