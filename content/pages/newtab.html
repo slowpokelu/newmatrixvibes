@@ -22,9 +22,8 @@ draft: false
 
 <p>is a curated list of links, inspired by <a href="https://github.com/sindresorhus/awesome#contents">sindresorhus/awesome.</a><br/>There are no affiliate links on this website.</p>
 
-<label for="targetToggle">Open Links:</label>
-<input type="checkbox" id="targetToggle">
-
+<button id="targetToggle">Toggle Open in new tab</button>
+<br>
 <!--
 <p>
 	Having knowledge of technology is a great power.
@@ -629,10 +628,12 @@ draft: false
 <script>
 	const targetToggle = document.getElementById("targetToggle");
 	const linkElements = Array.from(document.querySelectorAll("#list a"));
+	let openInNewTab = false;
 
 	// Event listener for the toggle button
-	targetToggle.addEventListener("change", () => {
-		const targetAttr = targetToggle.checked ? "_blank" : "_self";
+	targetToggle.addEventListener("click", () => {
+		openInNewTab = !openInNewTab;
+		const targetAttr = openInNewTab ? "_blank" : "_self";
 		linkElements.forEach(linkElement => linkElement.setAttribute("target", targetAttr));
 	});
 </script>
