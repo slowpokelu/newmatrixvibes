@@ -19,20 +19,22 @@ draft: false
 		border-radius: 5px;
 	}
 
+	/*
 	#targetToggle {
         background-color: #fff;
     }
+	*/
 
     #targetToggle.enabled {
-        background-color: #000;
-        color: #fff;
+        background-color: #00FF00;
+        /* color: #fff; */
     }
 </style>
 
 <p>is a curated list of links, inspired by <a href="https://github.com/sindresorhus/awesome#contents">sindresorhus/awesome.</a><br/>There are no affiliate links on this website.</p>
 
 <div>
-	<button id="targetToggle">Toggle Open in new tab</button>
+	<a href="#" id="targetToggle">New Tab?</a>
 </div>
 
 <!--
@@ -640,11 +642,13 @@ draft: false
 	const linkElements = Array.from(document.querySelectorAll("#list a"));
 	let openInNewTab = false;
 
-	targetToggle.addEventListener("click", () => {
-		openInNewTab = !openInNewTab;
-		const targetAttr = openInNewTab ? "_blank" : "_self";
-		linkElements.forEach(linkElement => linkElement.setAttribute("target", targetAttr));
+	targetToggle.addEventListener("click", (event) => {
+            event.preventDefault();
+
+            openInNewTab = !openInNewTab;
+            const targetAttr = openInNewTab ? "_blank" : "_self";
+            linkElements.forEach(linkElement => linkElement.setAttribute("target", targetAttr));
 
 		targetToggle.classList.toggle("enabled", openInNewTab);
-	});	
+	});
 </script>
