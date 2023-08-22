@@ -22,6 +22,9 @@ draft: false
 
 <p>is a curated list of links, inspired by <a href="https://github.com/sindresorhus/awesome#contents">sindresorhus/awesome.</a><br/>There are no affiliate links on this website.</p>
 
+<label for="targetToggle">Open Links:</label>
+<input type="checkbox" id="targetToggle">
+
 <!--
 <p>
 	Having knowledge of technology is a great power.
@@ -414,7 +417,7 @@ draft: false
 		<a href="https://md5hashing.net/">Hashing</a>
 		
 		<a href="https://www.utf8-chartable.de/">UTF-8</a>
-		/
+		
 		<a href="http://www.asciitable.com/">ASCII</a>
 		
 		<a href="https://www.dcode.fr/en">dcode</a>
@@ -622,3 +625,14 @@ draft: false
 	
 	<a href=""></a>
 -->
+
+<script>
+	const targetToggle = document.getElementById("targetToggle");
+	const linkElements = Array.from(document.querySelectorAll("#list a"));
+
+	// Event listener for the toggle button
+	targetToggle.addEventListener("change", () => {
+		const targetAttr = targetToggle.checked ? "_blank" : "_self";
+		linkElements.forEach(linkElement => linkElement.setAttribute("target", targetAttr));
+	});
+</script>
