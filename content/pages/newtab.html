@@ -18,12 +18,23 @@ draft: false
 		padding: 5px 10px;
 		border-radius: 5px;
 	}
+
+	#targetToggle {
+        background-color: #fff;
+    }
+
+    #targetToggle.enabled {
+        background-color: #000;
+        color: #fff;
+    }
 </style>
 
 <p>is a curated list of links, inspired by <a href="https://github.com/sindresorhus/awesome#contents">sindresorhus/awesome.</a><br/>There are no affiliate links on this website.</p>
 
-<button id="targetToggle">Toggle Open in new tab</button>
-<br>
+<div>
+	<button id="targetToggle">Toggle Open in new tab</button>
+</div>
+
 <!--
 <p>
 	Having knowledge of technology is a great power.
@@ -36,14 +47,13 @@ draft: false
 -->
 <!-- ZmxhZ3tuMF9jdGZfY2g0bGwzbmdlX2YwdW5kfQ== -->
 
-<div id="list">
-	<a href="https://www.google.com/">Google</a>  <a href="https://chat.openai.com/">ChatGPT</a>  <a href="https://www.notion.so/">Notion</a>
-	<br>
-</div>
-
 <h2>Quick Access</h2>
 
 <div id="list">
+	<a href="https://www.google.com/">Google</a>
+
+	<a href="https://www.notion.so/">Notion</a>
+
 	<a href="https://github.com/sindresorhus/awesome#readme">awesome</a>
 	
 	<a href="https://www.youtube.com/watch?v=jfKfPfyJRdk&ab_channel=LofiGirl">lofi</a>
@@ -630,10 +640,11 @@ draft: false
 	const linkElements = Array.from(document.querySelectorAll("#list a"));
 	let openInNewTab = false;
 
-	// Event listener for the toggle button
 	targetToggle.addEventListener("click", () => {
 		openInNewTab = !openInNewTab;
 		const targetAttr = openInNewTab ? "_blank" : "_self";
 		linkElements.forEach(linkElement => linkElement.setAttribute("target", targetAttr));
-	});
+
+		targetToggle.classList.toggle("enabled", openInNewTab);
+	});	
 </script>
